@@ -1,0 +1,36 @@
+{
+	"name": "pjh",
+	"version": "0.1.0",
+	"description": "Outputs colorized documentation for your package.json scripts to the console.",
+	"main": "index.js",
+	"scripts": {
+		"build": "gulp build",
+		"test": "export FORCE_COLOR=true && ./pjh.js \"$(cat package.json.test)\" #pjh test this help script"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/davidmwhynot/pjh.git"
+	},
+	"keywords": [
+		"package.json",
+		"pjh",
+		"package",
+		"json",
+		"help",
+		"helper",
+		"documentation"
+	],
+	"homepage": "https://github.com/davidmwhynot/pjh#readme",
+	"bugs": "https://github.com/davidmwhynot/pjh/issues",
+	"author": "davidmwhynot <davidmwhynot@gmail.com> (https://davidwhynot.me)",
+	"license": "MIT",
+	"files": [
+		"index.js"
+	],
+	"bin": "./index.js",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-minify": "^3.1.0",
+		"gulp-rename": "^2.0.0"
+	}
+}
