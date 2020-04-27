@@ -1,6 +1,6 @@
 {
 	"name": "pjh",
-	"version": "0.1.2",
+	"version": "1.0.0",
 	"description": "Outputs colorized documentation for your package.json scripts to the console.",
 	"main": "index.js",
 	"scripts": {

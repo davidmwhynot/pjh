@@ -1,6 +1,6 @@
 # `pjh` - Package.json Help
 
-Extremely lightweight (`index.js` is 1.21 kb, 680 bytes gzipped) utility to generate help documentation for your `package.json` scripts.
+Extremely lightweight (2.4kb) utility to generate help documentation for your `package.json` scripts.
 
 # Usage
 
