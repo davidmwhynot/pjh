@@ -1,0 +1,6 @@
+{
+	"scripts": {
+		"start": "node index.js #pjh-ignore",
+		"test": "jest #pjh runs test suite"
+	}
+}

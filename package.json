@@ -4,8 +4,14 @@
 	"description": "Outputs colorized documentation for your package.json scripts to the console.",
 	"main": "index.js",
 	"scripts": {
-		"build": "gulp build",
-		"test": "export FORCE_COLOR=true && ./pjh.js \"$(cat package.json.test)\" #pjh test this help script"
+		"build": "gulp build #pjh builds the project",
+		"test": "export FORCE_COLOR=true && ./pjh.js \"$(cat tests/package.json.test)\" #pjh run a test",
+		"examples": "npm run examples:full && npm run examples:pjh && npm run examples:pjh-ignore && npm run examples:no-documentation-available #pjh runs all examples",
+		"examples:full": "export FORCE_COLOR=true && ./pjh.js \"$(cat examples/package.json.full)\" #pjh runs the full example",
+		"examples:pjh": "export FORCE_COLOR=true && ./pjh.js \"$(cat examples/package.json.pjh)\" #pjh runs the pjh example",
+		"examples:pjh-ignore": "export FORCE_COLOR=true && ./pjh.js \"$(cat examples/package.json.pjh-ignore)\" #pjh runs the pjh-ignore example",
+		"examples:no-documentation-available": "export FORCE_COLOR=true && ./pjh.js \"$(cat examples/package.json.no-documentation-available)\" #pjh runs the no-documentation-available example",
+		"help": "npx pjh #pjh show this help information"
 	},
 	"repository": {
 		"type": "git",

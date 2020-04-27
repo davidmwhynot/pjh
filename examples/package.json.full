@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"start": "node dist/index.js #pjh starts the (built) application",
+		"setup": "npm i && cd client && npm i && cd .. #pjh todo: document script",
+		"build": "npm run build:client && npm run build:server #pjh builds client and server",
+		"build:client": "mkdir -p dist && rm -rf dist/public && cd client && npm run build && mv build ../dist/public && cd .. #pjh runs client build and moves output to dist folder",
+		"build:server": "tsc #pjh build typescript (outputs to dist folder)",
+		"watch": "nodemon #pjh runs nodemon",
+		"typescript": "node --inspect=5859 -r ts-node/register ./index.ts #pjh runs dev server w/ inspector for debugging",
+		"test": "jest #pjh runs jest",
+		"serve": "serve dist/public",
+		"lint": "#pjh not yet implemented",
+		"help": "npx pjh #pjh displays this help information"
+	}
+}
