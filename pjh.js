@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-
+console.log('process', JSON.stringify(process, null, '\t'));
 process.stdout.clearLine();
 process.stdout.cursorTo(0);
 

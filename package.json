@@ -1,11 +1,12 @@
 {
 	"name": "pjh",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"description": "Outputs colorized documentation for your package.json scripts to the console.",
 	"main": "index.js",
 	"scripts": {
 		"build": "gulp build #pjh builds the project",
-		"test": "export FORCE_COLOR=true && ./pjh.js \"$(cat tests/package.json.test)\" #pjh run a test",
+		"debug": "node --inspect-brk ./pjh.js #pjh run pjh with debugger auto-attached",
+		"test": "export FORCE_COLOR=true && node pjh.js \"$(cat tests/package.json.test)\" #pjh run a test",
 		"examples": "npm run examples:full && npm run examples:pjh && npm run examples:pjh-ignore && npm run examples:no-documentation-available #pjh runs all examples",
 		"examples:full": "export FORCE_COLOR=true && ./pjh.js \"$(cat examples/package.json.full)\" #pjh runs the full example",
 		"examples:pjh": "export FORCE_COLOR=true && ./pjh.js \"$(cat examples/package.json.pjh)\" #pjh runs the pjh example",
